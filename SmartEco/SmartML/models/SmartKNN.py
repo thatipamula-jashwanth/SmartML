@@ -41,7 +41,7 @@ class SmartKNNRegressorModel(BaseModel):
 
     def __init__(self):
         if not HAS_SMARTKNN:
-            raise ImportError("smart_knn not installed or not in PYTHONPATH")
+            raise ImportError("smart-knn not installed or not in PYTHONPATH")
 
         self.model = SmartKNN(
             k=5,
